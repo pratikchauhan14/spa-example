@@ -1,0 +1,43 @@
+{
+  "name": "parcel-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.2.6"
+  },
+  "scripts": {
+    "start": "parcel serve src/pages/index.hbs --no-cache --public-url /",
+    "build": "parcel build src/pages/index.hbs --no-cache --public-url ./ "
+  },
+  "devDependencies": {
+    "front-matter": "^2.3.0",
+    "handlebars": "^4.7.6",
+    "handlebars-helpers": "^0.10.0",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-wax": "^6.1.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "browserslist": [
+    ">0.25%",
+    "ie 11",
+    "not op_mini all"
+  ]
+}

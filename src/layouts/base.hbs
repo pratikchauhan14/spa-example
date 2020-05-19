@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    {{#block "title"}}
+    <title>{{title}}</title>
+    {{/block}}
+
+    
+
+        
+
+</head>
+<body data-barba="wrapper">
+    <ul id="layer">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="two-layer">
+        <span class="first"></span>
+        <span class="last"></span>
+    </div>
+    {{> header}}
+
+    {{#block "main"}}
+    {{/block}}
+
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../index.js"></script>
+</body>
+</html>

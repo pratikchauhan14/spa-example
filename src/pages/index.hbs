@@ -1,0 +1,19 @@
+---
+title: Index 
+interPageName: homepage
+---
+
+
+
+{{#extend "base"}}
+  {{#content "main"}}
+    <div class="body-container" data-barba="container" data-barba-namespace="{{interPageName}}">
+    <img src="https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        
+        <div>
+        <h1>{{title}}</h1>
+        <a href="./about.hbs">About Us</a>
+        </div>
+    </div> 
+    {{/content}}
+{{/extend}}
